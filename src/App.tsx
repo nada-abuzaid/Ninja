@@ -1,6 +1,7 @@
 import { ThemeProvider } from '@emotion/react';
 import { CssBaseline } from '@mui/material';
 import { ColorModeContext, useMode } from './theme';
+import TopBar from './components/TopBar';
 
 const App = () => {
   const [theme, colorMode] = useMode();
@@ -11,7 +12,7 @@ const App = () => {
         <CssBaseline />
         <div className="app">
           <div className="content">
-            <h1>Hacker Mode ^^</h1>
+            <TopBar />
           </div>
         </div>
       </ThemeProvider>
