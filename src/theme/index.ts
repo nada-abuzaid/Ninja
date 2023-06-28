@@ -12,7 +12,7 @@ export const themeSettings = (mode: string) => ({
           main: '#FFDA3C',
         },
         secondary: {
-          main: '#FFDA3C',
+          main: '#3435373d',
         },
         custom: {
           background: '#1E1F21',
@@ -31,7 +31,7 @@ export const themeSettings = (mode: string) => ({
       }
       : {
         primary: {
-          main: '#f2f2f2',
+          main: '#FFDA3C',
         },
         secondary: {
           main: '#f2f2f2',
