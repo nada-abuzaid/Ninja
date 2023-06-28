@@ -1,7 +1,8 @@
 import { ThemeProvider } from '@emotion/react';
 import { CssBaseline } from '@mui/material';
+import { RouterProvider } from 'react-router-dom';
 import { ColorModeContext, useMode } from './theme';
-import TopBar from './components/TopBar';
+import router from './routes';
 
 const App = () => {
   const [theme, colorMode] = useMode();
@@ -10,11 +11,7 @@ const App = () => {
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <div className="app">
-          <div className="content">
-            <TopBar />
-          </div>
-        </div>
+        <RouterProvider router={router} />
       </ThemeProvider>
     </ColorModeContext.Provider>
   );
